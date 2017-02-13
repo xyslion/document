@@ -155,5 +155,4 @@
 * [技术人员为什么要写博客](https://mp.weixin.qq.com/s?__biz=MzAxODI5ODMwOA==&mid=2666540396&idx=1&sn=42c71c1ed63eeea8fc6146767d589eff&chksm=80dce9c7b7ab60d16a5f894a192754e6907ef81d7dd8f10aae76f04ebae9c2d4e2268d572a91&scene=0&key=793f4c1da962693c81c9a021cb2606a2eee4875c2e8834cc52b3460c8954136b5dec5ceba032da94c3300a20adfecfeff84e4112a52059707ce87e2d9d27dff8dd72e5b265018acee5fae819900e28c5&ascene=7&uin=NjU4MTU4NDIw&devicetype=android-23&version=26050341&nettype=WIFI&abtest_cookie=AQABAAgAAQBEhh4AAAA%3D&pass_ticket=P9hD7ugUWxK0tnbpH9jGTgtZhvUWAbq%2BE%2Bct3jzC0xIa4hDqbsVysOpllHBpjiWc&wx_header=1)
 * [自动化单元测试的落地方法，高效高质量部署并不难！](http://mp.weixin.qq.com/s/Nairjne1M8XTUiGgeQUbzA)
 * [BetterJava-如何更好的使用 Java](https://github.com/cxxr/better-java/blob/master/README.zh-cn.md)
-* [开源电子书](https://www.zhihu.com/question/38836382?sort=created)
-
+* [开源电子书](https://www.zhihu.com/question/38836382?sort=created)的第8楼回答
