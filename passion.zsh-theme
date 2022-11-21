@@ -59,10 +59,10 @@ function directory() {
 
 
 # git
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}[%{$fg_no_bold[blue]%}μ %{$fg_no_bold[white]%}|%{$fg_no_bold[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[cyan]%}[%{$fg_no_bold[blue]%}μ %{$fg_no_bold[white]%}|%{$fg_no_bold[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[blue]%}] 🔥";
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[blue]%}]";
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[cyan]%}] 🔥";
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[cyan]%}]";
 
 function update_git_status() {
     GIT_STATUS=$(git_prompt_info);
@@ -73,8 +73,8 @@ function git_status() {
 }
 
 # kube_ps1
-KUBE_PS1_PREFIX="%{$fg_no_bold[blue]%}["
-KUBE_PS1_SUFFIX="%{$fg_no_bold[blue]%}]"
+KUBE_PS1_PREFIX="%{$fg_no_bold[cyan]%}["
+KUBE_PS1_SUFFIX="%{$fg_no_bold[cyan]%}]"
 
 function kube_prompt_info() {
     if ! which kube_ps1 >/dev/null 2>&1; then return 0; fi
