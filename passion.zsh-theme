@@ -74,13 +74,23 @@ function git_status() {
 
 # kube_ps1
 KUBE_PS1_PREFIX="%{$fg_no_bold[cyan]%}["
-KUBE_PS1_SUFFIX="%{$fg_no_bold[cyan]%}]"
+KUBE_PS1_SUFFIX="%{$fg_no_bold[cyan]%}]%{$reset_color%}"
 
 function kube_prompt_info() {
     if ! which kube_ps1 >/dev/null 2>&1; then return 0; fi
     echo "$(kube_ps1) "
 }
 
+# virtualenv_prompt_info
+ZSH_THEME_VIRTUALENV_PREFIX="%{$fg_no_bold[cyan]%}[⍢ %{$fg_no_bold[white]%}|%{$fg_no_bold[red]%}"
+ZSH_THEME_VIRTUALENV_SUFFIX="%{$fg_no_bold[cyan]%}]%{$reset_color%} "
+function virtualenv_status() {
+    if (( $+functions[virtualenv_prompt_info] )); then
+      echo "$(virtualenv_prompt_info)"
+    else
+      echo ""
+    fi
+}
 
 # command
 function update_command_status() {
@@ -219,4 +229,4 @@ TRAPALRM() {
 
 # prompt
 # PROMPT='$(real_time) $(login_info) $(directory) $(git_status)$(command_status) ';
-PROMPT='$(real_time) $(directory) $(kube_prompt_info)$(git_status)$(command_status) ';
+PROMPT='$(real_time) $(directory) $(virtualenv_status)$(kube_prompt_info)$(git_status)$(command_status) ';
